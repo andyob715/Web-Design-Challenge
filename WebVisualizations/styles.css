@@ -23,3 +23,23 @@ th, td {
     font-style: italic;
     color: slategray;
 }
+
+.imgsizer {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+.back {
+    background-color:lightgray;
+}
+
+.box {
+    background-color: whitesmoke;
+}
+
+h3 {
+    text-align: center;
+    color:slategray;
+    font-size: medium;
+}

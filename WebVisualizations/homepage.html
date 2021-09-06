@@ -14,7 +14,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head> 
-<body>
+<body class="back">
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <!-- Brand -->
     <a class="navbar-brand" href="homepage.html">Latitude</a>
@@ -45,5 +45,57 @@
 <!-- End vertical navbar -->
 <h1>Latitudinal Study of Weather</h1>
 <hr class="my-4">
+ <!-- Creates the Overall Grid -->
+ <div class="container">
 
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="col-md-7 box">
+        <p>The purpose of this project was to explore how the weather changed as an observer moved closer and further away from the equator.
+          This was achieved by completing the following steps:</p>
+          <ol>
+            <li>Generating random lat/long values via randrange function in python</li>
+            <li>Using the citipy library to attempt to find the closest city to those random coordinates</li>
+              <ul>
+                <li>Duplicates were expected so the number of coordinates retrieved far exceeded the goal value of 750</li>
+              </ul>
+            <li>Using the openweather API, the city names were plugged into the API call and if cities could be found they were returned</li>
+              <ul>
+               <li>Weather features such as Temperature, Humidity, Wind Speed and Cloud Cover were returned through the API</li>
+              </ul>
+            <li>Each weather feature was plotted against latitude to validate whether any coorelation to the latitude appeared</li>
+            </ol>
+      </div>
+      <div class="col-md-1"></div>
+      <div class="col-md-4 box">
+        <div class="row">
+          <div class="span4">
+            <h3>Click any graph to see expanded visual</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8 col-sm-6">
+            <a href="temperature.html">
+              <img src = "visualizations/temperature_vs_latitude.png" alt= "Latitude vs Temprature" class="imgsizer">
+             </a>
+          </div>
+          <div class="col-8 col-sm-6">
+            <a href="humidity.html">
+              <img src = "visualizations/humidity_vs_latitude.png" alt= "Latitude vs Humidity" class="imgsizer">
+            </a>
+          </div>
+          <div class="row">
+            <div class="col-8 col-sm-6">
+              <a href="cloudiness.html">
+                <img src = "visualizations/cloudiness_vs_latitude.png" alt= "Latitude vs Cloudiness" class="imgsizer">
+               </a>
+            </div>
+            <div class="col-8 col-sm-6">
+              <a href ="windiness.html">
+                <img src = "visualizations/wind_speed_vs_latitude.png" alt= "Latitude vs Wind Speed" class="imgsizer">
+              </a>
+            </div>
+      </div>
+    </div>
+  </div>
 </body>
