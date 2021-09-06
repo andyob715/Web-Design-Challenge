@@ -9,6 +9,7 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="styles.css">
+
 <!--Some dumb scripts I finally realized i had to add to get the dropdown to work-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -25,7 +26,7 @@
         <a class="nav-link" href="comparison.html">Comparison</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="data.html">Data</a>
+        <a class="nav-link" href="city_results.html">Data</a>
       </li>
   
       <!-- Dropdown -->
@@ -44,9 +45,8 @@
   </nav>
 <!-- End vertical navbar -->
 <h1>Latitude vs Humidity</h1>
-
-
-<p>The relationship between Humidity and Latitude is not a strong as the temperature. You can see the line clearly moving up or down based on the proximity to the Equator, but Humidity has a lot of factors that play into it aside from Latitude. My samples could be closer or further from specific geographic interests like large bodies of water or rainforests.</p>
-<img src = "visualizations/humidity_vs_latitude.png" alt= "Latitude vs Humidity">
-    
+<hr class="my-4">
+<img style='vertical-align:middle;display:inline;' src="visualizations/humidity_vs_latitude.png" alt= "Latitude vs Humidity">
+<div style='vertical-align:middle; display:inline;'>
+The relationship between Humidity and Latitude is not a strong as the temperature. Humidity has a lot of factors that play into it aside from Latitude. My samples could be closer or further from specific geographic interests like large bodies of water or rainforests.
 </body>

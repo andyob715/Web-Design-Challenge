@@ -9,6 +9,7 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="styles.css">
+
 <!--Some dumb scripts I finally realized i had to add to get the dropdown to work-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -17,7 +18,7 @@
 <body>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <!-- Brand -->
-    <a class="navbar-brand" href="index.html">Latitude</a>
+    <a class="navbar-brand" href="homepage.html">Latitude</a>
   
     <!-- Links -->
     <ul class="navbar-nav">
@@ -25,7 +26,7 @@
         <a class="nav-link" href="comparison.html">Comparison</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="data.html">Data</a>
+        <a class="nav-link" href="city_results.html">Data</a>
       </li>
   
       <!-- Dropdown -->
@@ -44,9 +45,9 @@
   </nav>
 <!-- End vertical navbar -->
 <h1>Latitude vs Cloudiness</h1>
-
-
-<p>Cloudiness</p>
-<img src = "/visualizations/cloudiness_vs_latitude.png" alt= "Latitude vs Cloudiness">
-    
+<hr class="my-4">
+<img style='vertical-align:middle;display:inline;' src="visualizations/cloudiness_vs_latitude.png" alt= "Latitude vs Cloudiness">
+<div style='vertical-align:middle; display:inline;'>
+No apparent correlation exist between Latitude and Cloudiness based on the data that was analyzed.
+</div>
 </body>

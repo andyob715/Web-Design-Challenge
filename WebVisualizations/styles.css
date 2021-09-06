@@ -36,6 +36,8 @@ th, td {
 
 .box {
     background-color: whitesmoke;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 h3 {
