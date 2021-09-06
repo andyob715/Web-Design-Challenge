@@ -30,6 +30,10 @@ th, td {
     object-fit: contain;
   }
 
+.imgsizer:hover{
+    border: 3px solid darkslategrey;
+    overflow: hidden;
+}
 .back {
     background-color:lightgray;
 }
